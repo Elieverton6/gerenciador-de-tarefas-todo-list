@@ -1,0 +1,81 @@
+@media screen and (max-width: 600px){
+
+    .container {
+        .form-container {
+            margin: 0 auto;
+            width: 90%;
+
+            & form {
+
+                & .input-tarefa {
+
+                    & input {
+                        font-size: 0.875rem !important;
+                    }
+
+                    & button {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+
+        & .tarefas-container {
+            max-width: 90% !important;
+            width: 100%;
+
+            & .texto-tarefas-criada-concluidas-container {
+
+                & .texto-tarefas-criada {
+
+                    & p {
+                        font-size: 0.875rem;
+                    }
+                }
+
+                & .texto-tarefas-concluidas {
+
+                    & p {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+
+
+            & .tarefas-criadas-wrapper {
+
+                & .tarefas-status-date {
+
+                    & .tarefas-status {
+
+                        & h2 {
+                            font-size: 1rem !important;
+                        }
+                    }
+
+                    & .tarefas-date-hour {
+
+                        & p {
+                            font-size: 0.875rem !important;
+                        }
+                    }
+                }
+
+                & .tarefa-title {
+
+                    & h1 {
+                        font-size: 1.25rem !important;
+                    }
+                }
+
+                & .tarefa-atualizar-deletar-wrapper {
+                    flex-direction: column;
+
+                    & button {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

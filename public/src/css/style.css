@@ -1,0 +1,304 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(20, 20, 20);
+
+    & .wrapper {
+        min-height: 100vh;
+        margin: 0 auto;
+
+        & .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            background-color: black;
+
+            & img {
+                width: 126px;
+                height: 48px;
+            }
+        }
+
+        & .form-container {
+
+            & form {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                & div.input-tarefa {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: -30px;
+                    width: 100%;
+                    max-width: 736px;
+
+                    & input {
+                        font-family: 'Poppins', sans-serif;
+                        border: 2px solid rgb(54, 54, 54);
+                        outline: none;
+                        border-radius: 0.5rem;
+                        width: 80%;
+                        color: rgb(133, 133, 133);
+                        font-size: 1rem;
+                        background-color: rgb(33, 33, 33);
+                        padding: 1rem 1.5rem;
+                    }
+                }
+
+                & button {
+                    border: 2px solid #3092ca;
+                    font-family: 'Poppins', sans-serif;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    border-radius: 0.5rem;
+                    width: 20%;
+                    font-size: 1rem;
+                    height: 100%;
+                    color: white;
+                    background-color: #1E6F9F;
+                    padding: 1rem;
+                    height: 100%;
+
+                    & img {
+                        margin: 0 0 0 0.3rem;
+                    }
+                }
+
+                & button:hover {
+                    background-color: #0d5077;
+                }
+            }
+        }
+
+        & .tarefas-container {
+            margin: 3rem auto 0 auto;
+            max-width: 736px;
+            width: 100%;
+
+            & .texto-tarefas-criada-concluidas-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & .texto-tarefas-criada {
+
+                    & p {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        color: #128acf;
+
+                        & span {
+                            border: 4px solid rgb(54, 54, 54);
+                            margin: 0 0 0 0.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 100%;
+                            background-color: gray;
+                            color: white;
+                        }
+                    }
+                }
+
+                & .texto-tarefas-concluidas {
+
+                    & p {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;
+                        color: #7c33db;
+
+                        & span {
+                            border: 4px solid rgb(54, 54, 54);
+                            margin: 0 0 0 0.3rem;
+                            padding: 0.5rem;
+                            border-radius: 20rem;
+                            background-color: gray;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            & .tarefas-criadas-wrapper {
+
+                & .tarefas-criadas-box {
+                    width: 90%;
+                    border-radius: 1rem;
+                    margin: 0 auto 1rem auto;
+                    padding: 1rem;
+                    background-color: rgb(32, 32, 32);
+                    border: 2px solid rgb(54, 54, 54);
+
+                    & .tarefas-status-date {
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+
+                        & .tarefas-status {
+
+                            & h2 {
+                                font-weight: 600;
+                                font-size: 1.25rem;
+                                font-family: "Montserrat", serif;
+                                color: white;
+
+                                & i {
+                                    color: #d1a619;
+                                }
+                            }
+
+                            & h2.finalizado {
+                                color: white;
+
+                                & i {
+                                    color: rgb(21, 209, 21);
+                                }
+                            }
+                        }
+
+                        & .tarefas-date-hour {
+                            color: white;
+
+                            & p {
+                                font-weight: 600;
+                                font-family: "Roboto", serif;
+                            }
+                        }
+                    }
+
+                    & .tarefa-title {
+                        width: 90%;
+                        margin: 0 auto 2rem auto;
+                        font-family: 'Roboto', sans-serif;
+                        text-align: center;
+                        word-wrap: break-word;
+                        color: rgba(255, 255, 255, 0.8);
+
+                        & h1 {
+                            font-weight: 400;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    & .hr {
+                        width: 100%;
+                        height: 2px;
+                        margin: 0 auto;
+                        background-color: rgba(47, 47, 47, 0.905);
+                    }
+
+                    & .tarefa-atualizar-deletar-wrapper {
+                        width: 100%;
+                        margin: 2rem auto 0 auto;
+                        display: flex;
+                        gap: 0.5rem;
+                        justify-content: space-between;
+
+                        & .form-finalizar-tarefa {
+                            width: 100%;
+
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 1rem;
+                                margin: 0 auto;
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 600;
+                                padding: 1rem;
+                                color: white;
+                                border: 0;
+                                background-color: #1E6F9F;
+                                cursor: pointer;
+                                width: 100%;
+
+                                & i {
+                                    margin: 0 0 0 0.5rem;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+
+                        & .form-desfazer-finalizacao {
+                            width: 100%;
+
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 1rem;
+                                margin: 0 auto;
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 600;
+                                padding: 1rem;
+                                color: white;
+                                border: 0;
+                                background-color: #9f811e;
+                                cursor: pointer;
+                                width: 100%;
+
+                                & i {
+                                    margin: 0 0 0 0.5rem;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+
+                        & .form-deletar-tarefa {
+                            width: 100%;
+
+                            button {
+                                justify-content: center;
+                                display: flex;
+                                align-items: center;
+                                border-radius: 1rem;
+                                margin: 0 auto;
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 600;
+                                padding: 1rem;
+                                color: white;
+                                border: 0;
+                                background-color: #9f1e1e;
+                                cursor: pointer;
+                                width: 100%;
+
+                                & i {
+                                    margin: 0 0 0 0.5rem;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .sem-tarefas-text {
+
+                    & p {
+                        color: rgb(133, 133, 133);
+                        margin: 5rem 0 0 0;
+                        text-align: center;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

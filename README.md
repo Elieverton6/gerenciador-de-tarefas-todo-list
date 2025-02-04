@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Gerenciador de Tarefas Laravel
 
 Este é um **Sistema de Gerenciamento de Tarefas** desenvolvido com o framework **Laravel** (PHP). Ele oferece funcionalidades essenciais como criação, finalização, reversão da finalização e exclusão de tarefas, além de integração com **Cache** para otimização de desempenho.

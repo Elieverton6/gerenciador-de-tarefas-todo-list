@@ -21,7 +21,7 @@ O objetivo deste projeto é proporcionar uma maneira simples e eficiente de gere
 
 1. **Clone o Repositório**:
     ```bash
-    git clone https://github.com/egzinn/gerenciador-de-tarefas.git
+    git clone https://github.com/Elieverton6/gerenciador-de-tarefas-todo-list
     ```
    
 2. **Instale as Dependências**:
@@ -55,4 +55,4 @@ Sinta-se à vontade para contribuir com o projeto! Para sugerir melhorias ou cor
 ---
 
 ### **Link do Projeto**  
-[GitHub - Gerenciador de Tarefas Laravel](https://github.com/egzinn/gerenciador-de-tarefas)
+[GitHub - Gerenciador de Tarefas Laravel](https://github.com/Elieverton6/gerenciador-de-tarefas-todo-list)
